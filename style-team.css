@@ -1,0 +1,402 @@
+.portal-tabs {
+	min-height: calc(100vh - 116px);
+}
+
+.tab-buttons-bar {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.tab-buttons-bar a {
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: underline !important;
+}
+
+table.team-portal-table.dataTable.no-footer,
+table.team-portal-table thead th {
+	border-bottom: none;
+}
+table.team-portal-table thead th,
+table.team-portal-table tbody td {
+	padding: 20px;
+	vertical-align: middle;
+}
+table.team-portal-table thead th.product-status {
+	padding-left: 30px;
+}
+table.team-portal-table tbody td.product-status {
+	padding-left: 15px;
+}
+table.team-portal-table thead .sorting,
+table.team-portal-table thead .sorting_asc,
+table.team-portal-table thead .sorting_desc {
+	background-image: none;
+}
+table.team-portal-table thead .sorting span,
+table.team-portal-table thead .sorting_asc span,
+table.team-portal-table thead .sorting_desc span {
+	display: inline-block;
+	padding-right: 20px;
+	background-image: url(images/sort.png);
+	background-repeat: no-repeat;
+	background-position: top -1px right;
+}
+.team-portal-table .form-check-input {
+	position: static;
+	margin-right: 10px !important;
+	transition: .2s;
+}
+.team-portal-table tbody tr .form-check-input:not(:checked) {
+	visibility: hidden;
+	opacity: 0;
+}
+.team-portal-table tbody tr:hover .form-check-input {
+	visibility: visible;
+	opacity: 1;
+}
+
+.portal-tabs h4 {
+	padding-left: 10px;
+	padding-top: 5px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	color: #000;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.portal-tabs [data-status="accepted"] h4,
+.portal-tabs [data-status="evaluated"] h4 {
+	border-left-color: #007019;
+}
+.portal-tabs [data-status="pending"] h4,
+.portal-tabs [data-status="unevaluated"] h4 {
+	border-left-color: #8C8C8C;
+}
+.portal-tabs [data-status="criteria"] h4 {
+	border-left-color: #970000;
+}
+.portal-tabs [data-status="unreviewed"] h4,
+.portal-tabs [data-status="progress"] h4 {
+	border-left-color: #9E980A;
+}
+
+.portal-tabs .nav-item {
+	margin-bottom: 0;
+}
+.portal-tabs .nav-link.active {
+	background-color: transparent;
+	color: #8C8C8C;
+}
+.portal-tabs .nav-item > a.nav-link.active,
+.portal-tabs .active .nav-link.active {
+	background-color: transparent;
+	color: #000;
+}
+
+.portal-tabs .team-portal-table .nav-link {
+	display: inline-block;
+	visibility: hidden;
+	opacity: 0;
+	color: #000;
+}
+.portal-tabs .team-portal-table tr:hover .nav-link {
+	visibility: visible;
+	opacity: 1;
+}
+.portal-tabs .team-portal-table .nav-link:after {
+	display: none;
+}
+
+.team-contact-tabs {
+	padding-top: 10px;
+}
+.team-contact-tabs .nav-tabs {
+	border: 0;
+}
+.team-contact-tabs .nav-item {
+	padding-right: 0;
+}
+.team-contact-tabs .divider {
+	display: inline;
+	padding: 0 15px;
+}
+.team-contact-tabs .nav-link {
+	font-size: 13px;
+	letter-spacing: -1px;
+}
+
+.action-modal .modal-dialog {
+	max-width: 600px;
+}
+.action-modal .modal-body {
+	padding: 0;
+}
+.action-modal .modal-content {
+	background-color: #000;
+}
+.action-modal-content {
+	padding: 50px 30px;
+}
+.action-modal-content h2 {
+	padding-bottom: 15px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.action-modal-content p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+}
+.action-modal-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+.action-modal-button button {
+	font-size: 16px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	min-width: 150px;
+	height: 50px;
+}
+
+#actionMessage{
+	padding: 30px;
+}
+#actionMessage .modal-dialog{
+	max-width: 600px;
+}
+#actionMessage .modal-body{
+	padding: 0;
+}
+#actionMessage .modal-content{
+	background-color: #000;
+}
+.action-message-modal{
+	padding: 30px;
+}
+.action-message-modal h2{
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.action-message-modal textarea{
+	font-size: 12px;
+	color: #000;
+	background-color: #fff;
+	padding: 10px;
+	border: 0;
+	border-radius: 0;
+}
+
+#notepadModal .modal-dialog {
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	margin: 0;
+	width: 100%;
+}
+#notepadModal button {
+	color: #fff;
+}
+#notepadModal .modal-content {
+	background-color: #000;
+}
+#notepadModal .notepad-box {
+	padding: 5px;
+}
+#notepadModal .notepad-box h2 {
+	color: #fff;
+}
+
+.team-action-btn {
+	display: block;
+	margin-left: auto;
+	padding: 0;
+	background-color: transparent;
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.portal-tabs .dropdown-menu {
+	padding: 20px 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.portal-tabs .dropdown .dropdown-item {
+	font-size: 12px;
+	font-weight: 500;
+	color: #8C8C8C;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	padding: 0;
+	padding-bottom: 20px;
+}
+.portal-tabs .dropdown .sub-dropdown-item {
+	display: none;
+	padding-left: 20px !important;
+	padding-top: 20px;
+	padding-bottom: 0;
+	font-weight: 400;
+}
+.portal-tabs .dropdown .dropdown-item.change-status {
+	padding-bottom: 0;
+}
+.portal-tabs .dropdown .sub-dropdown-item.show {
+	display: block;
+}
+.portal-tabs .dropdown .dropdown-item:last-child {
+	padding-bottom: 0;
+}
+.portal-tabs .dropdown .dropdown-toggle.hover:after {
+	transform: rotate(180deg);
+}
+.portal-tabs .dropdown .dropdown-item:hover {
+	background-color: transparent;
+}
+.portal-tabs table td .dropdown .dropdown-toggle:after {
+	content: unset;
+}
+.portal-tabs table td .dropdown .dropdown-toggle i {
+	color: #000;
+}
+.portal-tabs table td .dropdown .dropdown-item,
+.submission-detail-page .dropdown .dropdown-item {
+	cursor: pointer;
+}
+
+.invite-submission-form {
+	padding: 30px 10px;
+}
+.invite-submission-form label {
+	color: #000;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: -0.5px;
+}
+.invite-submission-form .form-control {
+	border: 1px solid #a7a7a7;
+	border-radius: 0;
+	color: #000;
+	font-size: 13px;
+}
+.invite-submission-form button {
+	width: 100%;
+	padding: 10px 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.submission-evaluations {
+	padding-top: 50px;
+}
+.evaluations-title h2,
+.evaluations-title span {
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.dropdown-menu.radio .dropdown-item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.dropdown-item.active {
+	border: 0;
+	background-color: transparent;
+}
+.dropdown-menu.radio input {
+	visibility: hidden;
+	position: absolute;
+	left: -30px;
+}
+.dropdown-menu.radio input:active,
+.dropdown-menu.radio input:focus {
+	box-shadow: none;
+	outline: 0;
+}
+.dropdown-menu.radio span {
+	padding: 0 0 20px;
+	color: #8c8c8c;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-decoration: none !important;
+}
+.dropdown-menu.radio input:disabled ~ span {
+	opacity: .5;
+}
+
+.evaluation-table th,
+.evaluation-table td {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+.evaluation-table .criteria-label {
+	width: 40%;
+}
+.evaluation-table .rating {
+	padding-left: 40px;
+}
+
+.criteria-label .info-icon {
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s;
+}
+.criteria-label:hover .info-icon {
+	visibility: visible;
+	opacity: 1;
+}
+
+.files-table a {
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s;
+}
+.files-table tr:hover a {
+	visibility: visible;
+	opacity: 1;
+}
+.files-table td i {
+	vertical-align: middle;
+}
+
+.pdfobject-container {
+	height: 80vh;
+}
+
+.freeze-unfreeze {
+	font-weight: 500;
+}
+.unfreeze-message {
+	display: none;
+}
+.frozen .freeze-message {
+	display: none;
+}
+.frozen .unfreeze-message {
+	display: block;
+}

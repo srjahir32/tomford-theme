@@ -1,0 +1,847 @@
+@media only screen and (min-width: 992px){
+	.singlepage .our-judges-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 120px 80px;
+	}
+}
+@media only screen and (min-width: 1440px){
+	.container-fluid,
+	footer{
+		max-width: 1400px;
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	.top-bar {
+		padding: 10px 115px 0;
+	}
+	.navbar {
+		padding: 40px 115px 20px;
+	}
+	.mobile-dropdown{
+		right: 115px;
+		top: 90px;
+	}
+	.our-purpose{
+		padding: 30px 100px 0;
+	}
+	.press-tools{
+		padding: 100px;
+	}
+	.the-problem,
+	.innovation-prize,
+	.submission,
+	.working,
+	.portal-tabs{
+		padding: 50px 100px;
+	}
+	.winning-prizes{
+		padding: 0 100px;
+	}
+	.timeline{
+		padding: 50px 100px 100px;
+	}
+	.judge-criteria,
+	.our-judges,
+	.investment-alliance,
+	.prize-development-council,
+	.media-press{
+		padding: 100px;
+	}
+	.prize-development-council{
+		padding: 100px 100px 150px;
+	}
+	.semi-finalist-teams{
+		padding: 100px 100px 200px;
+	}
+	.our-judges-page{
+		padding: 0 100px;
+		padding-top: 40px;
+		padding-bottom: 120px;
+	}
+	.contact-us {
+		padding: 30px 100px;
+	}
+	footer {
+		padding: 0 115px;
+	}
+}
+@media only screen and (min-width: 1800px) {
+	.navbar {
+		padding: 40px 148px 20px;
+	}
+	.mobile-dropdown{
+		right: 148px;
+		top: 110px;
+	}
+	.our-purpose{
+		padding: 30px 135px;
+	}
+	.press-tools{
+		padding: 100px 135px;
+	}
+	.the-problem,
+	.innovation-prize,
+	.submission,
+	.working,
+	.timeline,
+	.portal-tabs{
+		padding: 50px 135px;
+	}
+	.winning-prizes{
+		padding: 0 135px;
+	}
+	.judge-criteria,
+	.our-judges,
+	.investment-alliance,
+	.media-press{
+		padding: 100px;
+	}
+	.prize-development-council{
+		padding: 100px 100px 150px;
+	}
+	.semi-finalist-teams{
+		padding: 250px 135px 50px;
+	}
+	.our-judges-page{
+		padding: 0 135px;
+		padding-top: 40px;
+		padding-bottom: 120px;
+	}
+	.contact-us {
+		padding: 30px 135px;
+	}
+	footer {
+		padding: 0 150px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+	.navbar-nav li{
+		padding-right: 40px;
+	}
+	.navbar-nav li a{
+		font-size: 18px;
+	}
+	.footer-menu ul li a{
+		font-size: 20px;
+	}
+	#deadline-timer h2{
+		font-size: 70px;
+	}
+	.semi-finalist-teams-grid {
+		grid-gap: 40px 50px;
+	}
+	#destopNavbar a.navbar-brand.mx-auto {
+		margin: 0 10px !important;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.semi-finalist-teams .section-title h2 {
+		margin-bottom: 40px !important;
+	}
+	.press-tools h2 {
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 991px) {
+	.judge-profile-content {
+		padding-left: 35px;
+	}
+	.thin-film{
+		padding-top: 170px;
+	}
+	.hide-when-large {
+		display: none !important;
+	}
+	.no-pad-when-large {
+		padding-top: 0 !important;
+	}
+	.subscribe-form {
+		padding-top: 0 !important;
+	}
+	.timeline .subscribe-form{
+		padding-bottom: 30px;
+	}
+	.timeline-form .submit-btn {
+		bottom: 10px;
+	}
+}
+@media only screen and (max-width:1199px){
+	.social-icons{
+		position: unset;
+		padding-top: 40px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	div[id^='judgesModal'] .judge-profile .row:first-of-type {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.slider-desktop {
+		display: none;
+	}
+	.slider-tab {
+		display: block;
+	}
+	#destopNavbar{
+		display: none;
+	}
+	#mobileNavbar {
+		display: block;
+	}
+	.hide-when-small {
+		display: none !important;
+	}
+	.judge-profile{
+		padding: 40px 10px 0;
+	}
+	.judge-profile-content{
+		padding-top: 80px;
+	}
+	.responsive-order-1{
+		order: 1;
+	}
+	.responsive-order-2{
+		order: 2;
+	}
+	.event-deadline{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.hide-tablet{
+		display: none !important;
+	}
+	.hide-desktop{
+		display: block !important;
+	}
+	.timeline-form{
+		height: auto;
+	}
+	.investment-alliance-form{
+		padding-top: 80px;
+	}
+	.agreement-content{
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.section-title h2{
+		margin-bottom: 30px !important;
+	}
+	.section-title h2 br{
+		display: none !important;
+	}
+	.navbar-toggle{
+		margin-left: 15px;
+	}
+	.navbar{
+		padding: 20px 40px;
+	}
+	#mobileMenu {
+		width: 237px !important;
+		background: #ffffff;
+		align-items: normal;
+		padding-bottom: 10px;
+	}
+	#mobileMenu li {
+		border-bottom: 1px solid #E4E4E4;
+		padding-right: 0;
+	}
+	#mobileMenu li a{
+		color: #8C8C8C !important;
+		font-size: 15px;
+		padding: 13px 13px 8px !important;
+		text-align: left;
+	}
+	.logo-mobile{
+		position: relative;
+		right: 8.5px;
+	}
+	.mobil-btn{
+		z-index: 9999999;
+		border: 0;
+		padding: 0;
+		background-color: transparent;
+		font-size: 20px;
+		color: #fff !important;
+		text-align: left;
+	}
+	#mobileNavbar a.navbar-brand.mx-auto {
+		max-width: 200px;
+	}
+	#mobileNavbar button.navbar-toggler.mobil-btn {
+		position: absolute;
+		top: 35px;
+	}
+	#mobileNavbar .mobile-dropdown {
+		left: 40px;
+	}
+	.mobile-dropdown{
+		position: absolute;
+		right: 40px;
+		top: 75px;
+	}
+	.logo-mobile img{
+		width: 215px;
+	}
+	/* .hero-section{
+		padding-top: 40px;
+	} */
+	.our-purpose{
+		padding: 0 25px;
+	}
+	.press-tools{
+		padding: 100px 25px;
+	}
+	.the-problem,
+	.innovation-prize,
+	.submission,
+	.working,
+	.timeline,
+	.portal-tabs{
+		padding: 50px 20px;
+	}
+	.winning-prizes{
+		padding: 0 25px;
+		padding-top: 100px;
+	}
+	.judge-criteria,
+	.our-judges,
+	.investment-alliance,
+	.prize-development-council,
+	.media-press,
+	.semi-finalist-teams{
+		padding: 50px 25px 50px 25px;
+	}
+	.our-judges-page{
+		padding: 0 25px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.contact-us{
+		padding: 30px 25px;
+	}
+	footer{
+		padding: 0 40px;
+	}
+	.footer-menu{
+		padding: 35px 0 15px 0;
+	}
+	.our-purpose{
+		bottom: 80px;
+		margin-top: -175px;
+	}
+	#deadline-timer h2{
+		font-size: 70px;
+	}
+	.our-judges-page .our-judges-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#evaluateModal .modal-dialog{
+		max-width: 700px;
+	}
+	.timeline-content{
+		right: 0;
+		left: 10px;
+	}
+	.timeline-form .submit-btn{
+		bottom: 8px;
+	}
+	.timeline-content{
+		padding-top: 30px;
+	}
+	/* css by suraj */
+	.judge-criteria-content h6 {
+		display: none;
+	}
+	.judge-criteria-content ul li {
+		padding-bottom: 20px;
+	}
+	.investment-alliance-form{
+		height: auto;
+	}
+	div[id^='judgesModal'] .modal-dialog {
+		max-width: 768px;
+	}
+	.btn-prev{
+		left: 0;
+	}
+	.btn-next {
+		float: right;
+		right: 0;
+	}
+	.judge-content p {
+		color: #ffffff;
+	}
+	.semi-finalist-teams-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 100px;
+	}
+	.semi-finalist-teams-grid img{
+		width: 100%;
+	}
+	.press-tools {
+		padding: 50px 25px;
+	}
+	.timeline-content ul li::before {
+		width: 20px;
+		height: 20px;
+		margin-left: -0.82em;
+	}
+	.submission-content p,
+	.submission-content a {
+		font-size: 20px;
+		line-height: 1.35;
+	}
+	.singlepage .section-title h2 {
+		padding-bottom: 10px;
+	}
+	.singlepage .ceo-judge {
+		padding-top: 20px;
+	}
+	.page-template-investment-alliance .investment-alliance,
+	.page-template-prize-development-council .prize-development-council,
+	.page-template-our-judges .our-judges {
+		padding-top: 50px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.slider-tab {
+		display: none;
+	}
+	.slider-mobile{
+		display: block;
+	}
+	.see-mobile-link{
+		display: block;
+		padding-top: 80px;
+	}
+	.investment-alliance-content.see-mobile-link a {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.investment-alliance-form .see-mobile-link {
+		padding: 0 0 50px;
+	}
+	.footer-menu ul li {
+		padding-bottom: 10px;
+	}
+	.footer-menu {
+		padding: 35px 0 25px;
+	}
+	.judge-profile {
+		padding: 40px 0 0;
+	}
+	.btn-next {
+		right: 0;
+	}
+	.btn-prev {
+		left: 0;
+	}
+	.close img {
+		width: 24px;
+	}
+	.judge-profile-content {
+		padding-top: 30px;
+	}
+	.judge-profile-content h2 {
+		padding-bottom: 0;
+	}
+	div[id^='judgesModal'] .judge-profile .row:first-of-type {
+		margin-bottom: 30px;
+	}
+	.singlepage .section-title h2 {
+		padding-bottom: 0;
+	}
+	.singlepage .ceo-judge {
+		padding-top: 10px;
+	}
+	.investment-alliance-form .form-group{
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 575px){
+	.btn-prev,
+	.btn-next {
+		font-size: 0;
+	}
+	div[id^='judgesModal'] .judge-profile .row:last-of-type {
+		position: relative;
+	}
+	button.btn.btn-default.btn-next {
+		position: absolute;
+		top: -50px;
+		right: 15px;
+	}
+}
+@media only screen and (min-width: 480px){
+	.investment-alliance-form .form-control br {
+		display: none;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#mobileNavbar .mobile-dropdown {
+		left: 20px;
+	}
+	.mobile-dropdown {
+		right: 20px;
+	}
+	.navbar{
+		padding: 20px;
+	}
+	.navbar-brand img {
+		width: 200px;
+	}
+	.section-title h2{
+		font-size: 20px;
+		letter-spacing: -1px;
+	}
+	.our-purpose{
+		padding: 0 5px;
+	}
+	.the-problem{
+		padding: 50px 5px;
+	}
+	.innovation-prize{
+		padding: 60px 5px 60px;
+	}
+	.press-tools{
+		padding: 50px 5px;
+	}
+	.portal-tabs{
+		padding: 50px 5px;
+	}
+	.working{
+		padding: 20px 5px 0;
+	}
+	.submission,
+	.timeline{
+		padding: 50px 5px;
+	}
+	.winning-prizes{
+		padding: 0 5px;
+		padding-top: 50px;
+	}
+	.judge-criteria,
+	.our-judges,
+	.investment-alliance,
+	.prize-development-council,
+	.media-press,
+	.semi-finalist-teams{
+		padding: 50px 5px 0;
+	}
+	.our-judges-page{
+		padding: 0 5px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.judge-criteria{
+		padding-bottom: 50px;
+	}
+	.investment-alliance,
+	.prize-development-council{
+		padding-top: 100px;
+	}
+	.contact-us{
+		padding: 80px 5px 30px;
+	}
+	footer{
+		padding: 0 20px;
+	}
+	.our-purpose-content p,
+	.the-problem-content p,
+	.innovation-prize-content p{
+		padding-bottom: 20px;
+	}
+	.the-problem-content h2{
+		padding-top: 20px;
+	}
+	.our-purpose-content p,
+	.the-problem-content h2,
+	.the-problem-content p,
+	.innovation-prize-content p,
+	.submission-content p,
+	.submission-content a,
+	.working-content h2,
+	.working-content p,
+	.timeline-content h2,
+	.timeline-content p,
+	.judge-criteria-content p,
+	.judge-criteria-content h2,
+	.judge-criteria-content h6,
+	.our-judges-content p,
+	.our-judges-content a,
+	.investment-alliance-content p,
+	.investment-alliance-content a,
+	.press-tools-content h1,
+	.press-tools-contact h2,
+	.press-tools-contact a,
+	.press-tools-links h3,
+	.press-tools-links a{
+		font-size: 20px;
+	}
+	.thin-film{
+		padding-top: 50px;
+	}
+	.modal-body ._content{
+		padding: 15px;
+	}
+	.copyright-text{
+		padding: 15px 0;
+	}	
+	.footer-menu ul li a {
+		font-size: 15px!important;
+		letter-spacing: -1.5px;
+		line-height: 16px;
+	}
+	.our-purpose{
+		bottom: 30px;
+		margin-top: -85px;
+	}
+	.contact-us-content span{
+		display: block;
+	}
+	#days:after,
+	#hours:after,
+	#minutes:after,
+	#seconds:after{
+		font-size: 10px;
+	}
+	#deadline-timer h2{
+		font-size: 40px;
+	}
+	.ceo-judge .row{
+		display: block;
+	}
+	.about-ceo{
+		padding-top: 30px;
+	}
+	.our-judges-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 80px;
+		padding-top: 100px;
+	}
+	.media-press-card{
+		display: block;
+	}
+	.media-content{
+		padding-left: 0;
+		padding-top: 30px;
+	}
+	.footer-menu ul li{
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+	.footer-menu{
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+	#judgemodal .modal-body{
+		padding: 5px;
+	}
+	.judge-profile{
+		padding: 15px 0;
+	}
+	.judge-profile-image{
+		padding-top: 20px;
+	}
+	.judge-profile-content{
+		padding-top: 25px;
+	}
+	.our-judges-page-content{
+		padding-top: 0;
+	}
+	.our-judges-page .our-judges-grid{
+		grid-template-columns: repeat(1, 1fr);
+		padding-top: 80px;
+	}
+	.judge-portal,
+	.user-register,
+	.user-portal-login{
+		padding: 0 5px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.agreement-btns button{
+		padding: 10px 25px;
+	}
+	.portal-tabs .nav-item{
+		padding-right: 20px;
+	}
+	.mobile-responsive-order-1{
+		order: 1;
+	}
+	.mobile-responsive-order-2{
+		order: 2;
+	}
+	.evaluate-sheet table th{
+		padding: 20px;
+	}
+	.evaluate-sheet table th:first-child{
+		padding-left: 0;
+	}
+	/* css by suraj */
+	.our-purpose-content p,
+	.the-problem-content p,
+	.innovation-prize-content p,
+	.working-content p,
+	.timeline-content p,
+	.judge-criteria-content p,
+	.our-judges-content p,
+	.submission-content p,
+	.investment-alliance-content p,
+	.innovation-prize-content h2,
+	.working-content h2,
+	.timeline-content h2,
+	.judge-criteria-content h2,
+	.judge-criteria .section-title h2 {
+		line-height: 1.25;
+	}
+	.the-problem-content h2,
+	.submission .section-title h2 {
+		line-height: 24px;
+	}
+	.our-purpose .section-title h2,
+	.the-problem .section-title h2 {
+		font-weight: 500;
+	}
+	.submission-content a {
+		line-height: 1.35;
+	}
+	.timeline-content ul li {
+		padding-bottom: 100px;
+	}
+	.our-judges .section-title h2 {
+		font-size: 23px;
+		line-height: 27px;
+		margin-bottom: 20px !important;
+	}
+	.prize-development-council .section-title h2,
+	.investment-alliance .section-title h2 {
+		font-size: 23px;
+		line-height: 27px;
+	}
+	.about-ceo p {
+		color: #E4E4E4;
+	}
+	.judge-content p {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.semi-finalist-teams-grid {
+		grid-gap: 65px 15px;
+	}
+	.semi-finalist-teams-grid h2 {
+		font-size: 15px;
+		line-height: 20px;
+		margin-top: 0;
+	}
+	.btn-prev {
+		left: 0;
+	}
+	button.btn.btn-default.btn-next {
+		right: 15px;
+	}
+	.close img {
+		width: 24px;
+	}
+	div[id^='judgesModal'] .judge-profile .row:first-of-type .col-lg-6 {
+		padding: 0;
+	}
+	div[id^='judgesModal'] .judge-profile .row:first-of-type {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.subscribe-form .form-control {
+		max-width: unset;
+		width: 100%;
+	}
+	.subscribe-form .submit-btn {
+		left: unset;
+		right: 30px;
+	}
+	.subscribe-form.timeline-form {
+		padding-top: 50px;
+	}
+	.timeline-content p,
+	.timeline-content h2{
+		padding-right: 15px;
+	}
+	.the-problem .section-title h2 {
+		margin-bottom: 10px !important;
+	}
+	.innovation-prize .section-title h2 {
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom: 25px!important;
+	}
+	.submission .section-title h2,
+	.investment-alliance .section-title h2 {
+		margin-bottom: 25px!important;
+	}
+	.working-content p {
+		padding-bottom: 20px;
+	}
+	.timeline .section-title h2 {
+		margin-top: 10px;
+	}
+	.judge-criteria-content p{
+		padding-bottom: 30px;
+	}
+	.investment-alliance-form .form-control {
+		max-width: unset;
+		display: table;
+	}
+	.investment-alliance-form .submit-btn {
+		right: 30px;
+		position: absolute;
+		bottom: 8px;
+		left: unset;
+	}
+	.judge-profile-content h2 {
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		line-height: 27px;
+	}
+	div[id^='judgesModal'] .judge-profile-content h2,
+	div[id^='judgesModal'] .judge-profile-content p {
+		font-size: 20px;
+		color: #000000;
+		line-height: 27px;
+	}
+	.press-tools {
+		padding: 20px 5px 40px;
+	}
+	.press-tools h2,
+	.press-tools p {
+		font-size: 20px;
+		line-height: 1.17;
+	}
+	.press-tools h2 {
+		padding-bottom: 50px;
+	}
+	.investment-alliance-form {
+		margin-bottom: 20px;
+	}
+	.investment-alliance-form .submit-btn {
+		bottom: 12px;
+	}
+	.singlepage .ceo-image img {
+		width: 100%;
+	}
+	.singlepage .our-judges-grid {
+		grid-gap: 80px;
+	}
+	.singlepage {
+		padding-bottom: 50px;
+	}
+	.singlepage .investment-alliance-form .submit-btn {
+		bottom: 29px;
+	}
+}

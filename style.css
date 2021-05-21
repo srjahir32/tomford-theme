@@ -1,0 +1,2391 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Book.eot');
+	src: url('fonts/Gotham-Book.woff') format('woff'),
+		url('fonts/Gotham-Book.ttf') format('truetype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Medium.eot');
+	src: url('fonts/Gotham-Medium.woff') format('woff'),
+		url('fonts/Gotham-Medium.ttf') format('truetype');
+	font-weight: 500;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary,
+time, mark, audio, video, input, textarea, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: 'Gotham';
+}
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*---------------------------------------
+   General CSS
+-----------------------------------------*/
+
+body {
+	background-color: #000;
+}
+.section-title h2 {
+	font-size: 23px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.hide-desktop {
+	display: none !important;
+}
+.css-hide {
+	display: none;
+}
+.mobile-notification {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.mobile-notification h1 {
+	font-size: 23px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.mobile-notification strong {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+button {
+	min-width: 170px;
+	padding: 15px 0 11px;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.close {
+	min-width: unset;
+}
+/*---------------------------------------
+   Header CSS
+-----------------------------------------*/
+
+.navbar {
+	padding: 20px 48px;
+	background: #000;
+}
+.navbar-brand {
+	padding: 0;
+	line-height: 0;
+}
+.navbar-nav {
+	align-items: center;
+}
+.navbar-nav li {
+	padding-right: 40px;
+}
+.navbar-nav li:last-child {
+	padding-right: 0;
+}
+.navbar-nav li a {
+	font-size: 18px;
+	letter-spacing: -1px;
+	color: #fff !important;
+	text-transform: uppercase;
+	padding: 0 !important;
+	cursor: pointer;
+	text-align: center;
+}
+#mobileMenu {
+	width: 237px !important;
+	background: #ffffff;
+	align-items: normal;
+}
+#mobileMenu li {
+	border-bottom: 1px solid #E4E4E4;
+	padding-right: 0;
+}
+#mobileMenu li a {
+	color: #8C8C8C !important;
+	font-size: 15px;
+	padding: 13px 13px 8px !important;
+	text-align: left;
+}
+.logo-mobile {
+	position: relative;
+	right: 8.5px;
+}
+.mobil-btn {
+	z-index: 9999999;
+	width: auto;
+	min-width: unset;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	color: #fff !important;
+	font-size: 20px;
+	text-align: left;
+}
+#mobileNavbar a.navbar-brand.mx-auto {
+	display: block;
+	text-align: center;
+}
+#mobileNavbar button.navbar-toggler.mobil-btn {
+	position: absolute;
+	top: 45px;
+}
+.mobile-dropdown {
+	position: absolute;
+	top: 75px;
+	right: 48px;
+}
+.mobile-dropdown ul {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*---------------------------------------
+   Hero Section CSS
+-----------------------------------------*/
+
+/* .hero-section{
+	padding-top: 80px;
+} */
+.hero-section-image{
+	text-align: center;
+}
+.event-deadline p{
+	font-size: 23px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+#deadline-timer h2 {
+	font-size: 95px;
+	font-weight: 500;
+	color: #fff;
+	position: relative;
+	display: inline;
+}
+#days:after{
+	content: 'Days';
+}
+#hours:after{
+	content: 'Hours';
+}
+#minutes:after{
+	content: 'Minutes';
+}
+#seconds:after{
+	content: 'Seconds';
+}
+#days:after,
+#hours:after,
+#minutes:after,
+#seconds:after {
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/*---------------------------------------
+   Our Purpose Section CSS
+-----------------------------------------*/
+
+.our-purpose{
+	padding: 0 48px;
+	padding-top: 20px;
+}
+.our-purpose-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.our-purpose-content p:last-child{
+	padding-bottom: 0;
+}
+.our-purpose-content a{
+	text-decoration: underline !important;
+	color: #ffffff;
+}
+
+/*---------------------------------------
+   Our Purpose Section CSS
+-----------------------------------------*/
+
+.winning-prizes{
+	padding: 0 48px;
+	padding-top: 100px;
+}
+.winning-prize-card{
+	padding: 150px 30px 30px 30px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.winning-prize-card h2{
+	font-size: 23px;
+	color: #000;
+	text-transform: uppercase;
+}
+.winning-prize-card p{
+	font-size: 16px;
+	color: #000;
+	padding-top: 10px;
+}
+
+/*---------------------------------------
+   Thin Film Section CSS
+-----------------------------------------*/
+
+.thin-film{
+	padding-top: 80px;
+}
+.thin-film-image{
+	text-align: center;
+}
+
+/*---------------------------------------
+   The problem Section CSS
+-----------------------------------------*/
+
+.the-problem{
+	padding: 50px 48px;
+}
+.the-problem-content h2{
+	font-size: 23px;
+	line-height: 1.17;
+	letter-spacing: -1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.the-problem-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 50px;
+}
+.the-problem-content p:last-child{
+	padding-bottom: 0;
+}
+
+/*---------------------------------------
+   Innovation Prize Section CSS
+-----------------------------------------*/
+
+.innovation-prize{
+	padding: 50px 48px;
+}
+.innovation-prize-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.innovation-prize-content p:last-child{
+	padding-bottom: 0;
+}
+.padding-top-30{
+	padding-top: 30px;
+}
+.subscribe-form{
+	padding-top: 30px;
+}
+.subscribe-form label{
+	font-size: 15px;
+	letter-spacing: -1px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.subscribe-form .form-control {
+	position: relative;
+	max-width: 280px;
+	height: 35px;
+	padding-top: 8px;
+	border: 0;
+	border-radius: 0;
+	background-color: #fff;
+	color: #000 !important;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.subscribe-form .form-control:active,
+.subscribe-form .form-control:focus {
+	border: solid 1px #ccc;
+	box-shadow: none;
+	outline: 0;
+	background-color: #fff;
+}
+.subscribe-form .form-control::placeholder {
+	color: #000;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.subscribe-form .submit-btn{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 12px;
+	color: #000;
+	background-color: transparent;
+	border: 0;
+	position: absolute;
+	bottom: 8px;
+	left: 275px;
+}
+
+/*---------------------------------------
+   Submission Section CSS
+-----------------------------------------*/
+
+.submission{
+	padding: 50px 48px;
+}
+.submission-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.submission-content a{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	text-decoration: underline !important;
+}
+.submission-content p:last-child{
+	padding-bottom: 0;
+}
+
+/*---------------------------------------
+   Working Section CSS
+-----------------------------------------*/
+
+.working{
+	padding: 50px 48px;
+}
+.working-content h2{
+	font-size: 23px;
+	line-height: 1.17;
+	letter-spacing: -1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+.working-content h2:first-child{
+	padding-top: 0;
+}
+.working-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.working-content p:last-child{
+	padding-bottom: 0;
+}
+
+/*---------------------------------------
+   Timeline Section CSS
+-----------------------------------------*/
+
+.timeline{
+	padding: 50px 48px;
+	padding: 50px 48px 200px;
+}
+.timeline-content{
+	position: relative;
+	right: 35px;
+}
+.timeline-content ul{
+	list-style: none;
+}
+.timeline-content ul li{
+	border-left: 4px solid #fff;
+	padding-bottom: 150px;
+}
+.timeline-content ul li::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -0.9em;
+  position: absolute;
+}
+.timeline-content ul li:last-child {
+	padding-bottom: 0;
+	border-left: 4px solid transparent;
+}
+.timeline-content h2 {
+	font-size: 23px;
+	line-height: 1.17;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+.timeline-content div,
+.timeline-content p {
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-left: 30px;
+}
+.timeline-form {
+	height: 100%;
+	display: grid;
+	align-items: flex-end;
+}
+.timeline-form .submit-btn {
+	bottom: -19px;
+	left: 275px;
+}
+
+/*---------------------------------------
+   Judge Criteria Section CSS
+-----------------------------------------*/
+
+.judge-criteria{
+	padding: 250px 48px 50px;
+	padding: 50px 48px 200px;
+}
+.judge-criteria-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 50px;
+}
+.judge-criteria-content ul{
+	padding-left: 15px;
+}
+.judge-criteria-content ul li{
+	padding-bottom: 50px;
+}
+.judge-criteria-content ul li:last-child{
+	padding-bottom: 0;
+}
+.judge-criteria-content ul li::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -1em;
+  position: absolute;
+}
+.judge-criteria-content h2{
+	font-size: 23px;
+	line-height: 1.17;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+.judge-criteria-content h6{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-left: 30px;
+}
+
+/*---------------------------------------
+   Our Judges Section CSS
+-----------------------------------------*/
+
+.our-judges{
+	padding: 250px 48px 50px;
+	padding: 50px 48px 200px;
+}
+.our-judges-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+.our-judges-content a{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	text-decoration: underline !important;
+}
+.ceo-judge{
+	padding-top: 70px;
+}
+.ceo-image img {
+	margin: auto;
+	display: block;
+}
+.about-ceo h2{
+	font-size: 23px;
+	letter-spacing: -1px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.about-ceo h4{
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.about-ceo p{
+	font-size: 15px;
+	line-height: 20px;
+	color: #fff;
+}
+.our-judges-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 80px;
+	padding-top: 100px;
+}
+.judge-card{
+	text-align: center;
+}
+.judge-card:hover {
+	cursor: pointer;
+}
+.judge-content{
+	padding-top: 30px;
+}
+.judge-content h2{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.judge-content h6{
+	font-size: 12px;
+	color: #8C8C8C;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.judge-content p{
+	font-size: 12px;
+	color: #E4E4E4 !important;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+.judge-profile{
+	padding: 60px 60px  0;
+}
+.judge-profile-content h2{
+	font-size: 23px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+}
+.judge-profile-content p{
+	font-size: 23px;
+	line-height: 27px;
+	text-transform: none;
+	padding-top: 20px;
+}
+.social-icons{
+	position: absolute;
+	bottom: 0;
+}
+.social-icons ul{
+	list-style: none;
+}
+.social-icons ul li{
+	display: inline-block;
+	padding-right: 25px;
+}
+.social-icons ul li a{
+	font-size: 25px;
+	color: #000;
+}
+
+/*---------------------------------------
+   Investment Alliance Section CSS
+-----------------------------------------*/
+
+.investment-alliance{
+	padding: 250px 48px 50px;
+	padding: 50px 48px 200px;
+}
+.investment-alliance-content p{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+.investment-alliance-content a{
+	font-size: 23px;
+	line-height: 1.17;
+	color: #ffffff;
+	text-decoration: underline !important;
+}
+.investment-alliance-content p:last-child{
+	padding-bottom: 0;
+}
+.investment-alliance-form{
+	height: 100%;
+	display: grid;
+	align-items: flex-end;
+	position: relative;
+}
+.investment-alliance-form .form-group {
+	max-width: 400px;
+	border: solid 1px #fff;
+	position: relative;
+}
+.investment-alliance-form .form-control {
+	/*position: relative;*/
+	max-width: 400px;
+	height: 35px;
+	padding-top: 9px;
+	padding-right: 30px;
+	border: solid 0px #fff;
+	border-radius: 0;
+	background-color: transparent;
+	color: #fff !important;
+	font-size: 15px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.investment-alliance-form .form-control::placeholder{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+.investment-alliance-form .submit-btn {
+	position: absolute;
+	right: 12px;
+	bottom: 0;
+	transform: translate(0, -50%);
+	border: 0;
+	background-color: transparent;
+	color: #fff;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 12px;
+}
+
+/*---------------------------------------
+   Prize Development Council Section CSS
+-----------------------------------------*/
+
+.prize-development-council{
+	padding: 250px 48px 150px;
+	padding: 50px 48px 200px;
+}
+
+/*---------------------------------------
+   Media & Press Section CSS
+-----------------------------------------*/
+
+.media-press{
+	padding: 250px 48px 50px;
+}
+.media-press-card{
+	display: flex;
+	align-items: center;
+	padding-bottom: 50px;
+}
+.media-image img{
+	max-width: 230px;
+}
+.media-content{
+	padding-left: 20px;
+}
+.media-content h2{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+.media-content p{
+	font-size: 23px;
+	color: #fff;
+}
+.media-press-links h2{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.media-press-links ul{
+	list-style: none;
+}
+.media-press-links ul li{
+	padding-bottom: 10px;
+}
+.media-press-links ul li a{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+/*---------------------------------------
+   Contact Us Section CSS
+-----------------------------------------*/
+
+.contact-us{
+	padding: 30px 48px 30px 48px;
+}
+.contact-us-content{
+	text-align: center;
+}
+.contact-us-content p,
+.contact-us-content a{
+	font-size: 15px;
+	line-height: 1.6;
+	letter-spacing: -1px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.contact-us-content a{
+	text-decoration: underline !important;
+}
+.contact-us-content img{
+	padding: 15px 0;
+}
+
+/*---------------------------------------
+   Footer CSS
+-----------------------------------------*/
+
+footer{
+	padding: 0px 63px;
+}
+.footer-menu{
+	padding: 40px 0 20px 0;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+.footer-menu ul{
+	list-style: none;
+}
+.footer-menu ul li{
+	display: inline-block;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+.footer-menu ul li a{
+	font-size: 23px;
+	line-height: 1.175;
+	letter-spacing: -1.5px;
+	color: #A7A7A7 !important;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.copyright-text{
+	padding: 30px 0;
+}
+.copyright-text p{
+	font-size: 13px;
+	letter-spacing: -1px;
+	color: #666666;
+	text-transform: uppercase;
+}
+.modal-body ._content{
+	padding:20px 30px 20px 30px;
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: -0.5px;
+}
+._content p{
+	color: #8C8C8C;
+	text-transform: uppercase;
+}
+.form_fields label{
+	color:black;
+	margin-bottom:5px;
+}
+#mobileNavbar{
+	display:none;
+}
+.wpcf7-form-control.wpcf7-submit.btn.btn-default{
+  	width: 100%;
+  	border-radius:unset;
+  	background-color: black;
+  	color: white;
+  	padding-top:9px;
+  	padding-bottom:9px;
+  	cursor: pointer;
+  	text-align: center;
+  	margin-bottom:28px;
+}
+.wpcf7-form-control.wpcf7-submit.btn.btn-default:hover{
+  	width: 100%;
+  	border: 1px solid black;
+  	background-color: white;
+  	color: black;
+  	border-radius:unset;
+  	padding-top:9px;
+  	padding-bottom:9px;
+  	cursor: pointer;
+  	text-align: center;
+}
+.form_fields,
+#openInvestmentAllianceModal .form-row{
+	padding-top: 20px;
+}
+.form_fields .form-control{
+	margin-bottom: 20px;
+}
+.form_fields .form-control,
+#openInvestmentAllianceModal .form-control{
+	border: 1px solid #A7A7A7;
+	box-sizing: border-box;
+	border-radius:unset;
+}
+.form_fields label,
+#openInvestmentAllianceModal{
+	color:black;
+	margin-bottom: 5px;
+}
+#openInvestmentAllianceModal .wpcf7-form-control.wpcf7-submit.btn.btn-default{
+	margin-bottom: 0;
+}
+#openInvestmentAllianceModal label{
+	font-size: 11px;
+	letter-spacing: -0.5px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+/*---------------------------------------
+   Judges Page CSS
+-----------------------------------------*/
+
+.our-judges-page{
+	padding: 0 48px;
+	padding-top: 40px;
+	padding-bottom: 120px;
+}
+.our-judges-page-content{
+	padding-top: 50px;
+}
+.our-judges-page-content p{
+	font-size: 23px;
+	color: #fff;
+	line-height: 27px;
+}
+.our-judges-page .ceo-judge{
+	padding-top: 50px;
+}
+.our-judges-page .our-judges-grid{
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 100px;
+}
+
+/*---------------------------------------
+   Press Tools Page CSS
+-----------------------------------------*/
+
+.press-tools{
+	padding: 100px 48px;
+}
+.press-tools-content h1{
+	font-size: 23px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.press-tools-contact{
+	padding: 50px 0;
+}
+.press-tools-contact h2,
+.press-tools-contact a{
+	font-size: 23px;
+	color: #fff;
+}
+.press-tools-links h3{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.press-tools-links a{
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-decoration: underline !important;
+}
+.press-tools-links h3:last-child{
+	padding-top: 20px;
+}
+
+/*---------------------------------------
+   Judges Portal Page CSS
+-----------------------------------------*/
+
+.judge-portal{
+	padding: 100px 0;
+}
+.judge-portal h2{
+	padding-bottom: 50px;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+.judge-portal-login{
+	padding-top: 130px;
+}
+.judge-portal-login-form{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.judge-portal-login-form label{
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.judge-portal-login-form .form-check-label{
+	text-transform: unset;
+}
+.judge-portal-login-form .form-control{
+	font-size: 13px;
+	color: #000;
+	border: 0;
+	border-radius: 0;
+	padding: 10px;
+	height: 50px;
+}
+.judge-portal-login-form .form-control::placeholder{
+	font-size: 13px;
+	color: #d4d4d4;
+}
+.judge-portal-login-form .submit-btn{
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 13px 60px;
+	background-color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.judge-portal-login-form .forgot-password{
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	text-decoration: underline !important;
+	display: block;
+	text-align: right;
+}
+#agreementModal .modal-body{
+	padding: 0;
+}
+.agreement-content{
+	padding: 40px 80px;
+}
+.agreement-content h2{
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.agreement-content p{
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: unset;
+}
+.agreement-content .form-check{
+	padding-top: 20px;
+}
+.agreement-content .form-check label,
+.agreement-content .form-check label a{
+	font-size: 20px;
+	color: #000;
+	text-transform: uppercase;
+}
+.agreement-content .form-check label a{
+	text-decoration: underline !important;
+}
+.agreement-btns{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+.agreement-btns button,
+.agreement-btns a{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	padding: 15px 50px;
+	background-color: #000;
+	text-transform: uppercase;
+}
+
+/*---------------------------------------
+   Judges Portal Account Page CSS
+-----------------------------------------*/
+
+.portal-tabs{
+	padding: 50px 48px;
+	background-color: #fff;
+}
+.portal-tabs .nav-tabs{
+	border-bottom: 1px solid #000;
+}
+.portal-tabs .nav-item{
+	padding-right: 40px;
+}
+.portal-tabs .nav-item:last-child{
+	padding-right: 0;
+}
+.portal-tabs .nav-link{
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+	color: #8C8C8C;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.portal-tabs .nav-link.active{
+	background-color: transparent;
+	color: #000;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #fff;
+}
+.table-striped tbody tr:hover {
+	background-color: #e4e4e4;
+}
+.table-striped tbody tr:nth-of-type(even) td:not(:first-child) {
+	background-color: #e4e4e4;
+}
+
+.portal-tabs table th,
+.portal-tabs table td {
+	padding: 20px;
+	color: #000;
+	font-size: 14px;
+}
+.portal-tabs table th {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.portal-tabs table td {
+	font-weight: 500;
+}
+
+.portal-tabs table.table-borderless td:first-child,
+.portal-tabs table.table-borderless td:last-child {
+	border-right: 1px solid #a7a7a7;
+}
+.portal-tabs table.table-borderless tr:first-child td:not(:first-child) {
+	border-top: 1px solid #a7a7a7;
+}
+.portal-tabs table.table-borderless td:not(:first-child) {
+	border-bottom: 1px solid #a7a7a7;
+}
+
+#contact .team-portal-table td:last-child {
+	border-left: 1px solid #a7a7a7;
+}
+
+.portal-tabs [data-status="evaluated"]{
+	color: #007019;
+}
+.portal-tabs table td a {
+	color: #000;
+}
+.portal-tabs table td .view-score {
+	visibility: hidden;
+	opacity: 0;
+	font-weight: 400;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.portal-tabs table tr:hover td .view-score {
+	visibility: visible;
+	opacity: 1;
+}
+.portal-footer {
+	padding-top: 40px;
+}
+
+.notepad-button {
+	text-align: right;
+}
+.notepad-button button {
+	padding: 5px 20px;
+	border: 1px solid #000;
+	background-color: transparent;
+	color: #000;
+	font-size: 14px;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+#notepadtModal .modal-dialog {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	width: 100%;
+}
+#notepadtModal .modal-body {
+	padding: 20px;
+}
+.notepad-box h2 {
+	font-size: 18px;
+	color: #000;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+.notepad-box textarea {
+	font-size: 12px;
+	color: #000;
+	width: 100%;
+	border: 1px solid #000;
+	padding: 10px;
+}
+.notepad-box button {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	padding: 13px 60px;
+}
+.submission-detail-page {
+	padding-top: 10px;
+}
+.submission-detail-header h2 {
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.submission-detail-header a {
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: underline !important;
+}
+.evaluate-btn {
+	display: block;
+	margin-left: auto;
+	background-color: transparent;
+	color: #000;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.product-description {
+	padding-top: 30px;
+}
+.product-description h2 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.product-description p {
+	padding-top: 10px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.product-files {
+	padding-top: 30px;
+}
+.product-files h2 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.files-table {
+	margin-top: 10px;
+}
+.files-table td {
+	padding: 15px 0 !important;
+	border-bottom: 1px solid #a7a7a7;
+	border-top: 0;
+	vertical-align: middle;
+}
+.files-table td:nth-child(2) {
+	text-align: right;
+}
+.files-table td i {
+	padding-right: 10px;
+	font-size: 30px;
+}
+.submission-memo {
+	padding-top: 70px;
+}
+.submission-memo h2 {
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.submission-memo textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #a7a7a7;
+	background-color: transparent;
+	color: #000;
+	font-size: 14px;
+}
+
+#evaluateModal .modal-content {
+	background-color: #000;
+}
+#evaluateModal .modal-body {
+	padding: 15px 15px 0;
+}
+#evaluateModal .close {
+	opacity: 1;
+	color: #fff;
+	text-shadow: none;
+}
+.evaluate-sheet table th,
+.evaluate-sheet table td {
+	vertical-align: middle;
+	padding: 20px 0;
+	border: 0;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+}
+.evaluate-sheet table th:first-child,
+.evaluate-sheet table td:first-child {
+	text-align: left;
+}
+.evaluate-sheet table th {
+	font-size: 13px;
+}
+.evaluate-sheet table td {
+	font-size: 12px;
+}
+.evaluate-sheet table td:first-child {
+	font-weight: 500;
+}
+.evaluate-sheet table td:not(:first-child) {
+	border-bottom: 1px solid #a7a7a7;
+}
+.evaluate-sheet thead tr:last-child th:first-child,
+.evaluate-sheet thead tr:last-child th:last-child,
+.evaluate-sheet table td:first-child,
+.evaluate-sheet table td:last-child {
+	border-right: 1px solid #a7a7a7;
+}
+.evaluate-sheet thead tr:last-child th:not(:first-child) {
+	border-top: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+}
+.evaluate-sheet table td input[type="radio"]{
+	width: 15px;
+	height: 15px;
+}
+.evaluate-sheet table td span {
+	display: block;
+	margin: 0 auto;
+	width: 13px;
+	height: 13px;
+	border: 2px solid #000;
+	outline: 1px solid #fff;
+	background-color: #fff;
+}
+.info-icon {
+	position: relative;
+	top: 3px;
+	min-width: unset;
+	padding: 0;
+	background-color: transparent;
+}
+.info-icon img {
+	width: 15px;
+}
+.tooltip .tooltip-inner {
+	padding: 15px 30px;
+	max-width: 500px;
+}
+.tooltip h2 {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 10px;
+}
+.tooltip p {
+	font-size: 14px;
+	color: #fff;
+	line-height: 20px;
+	text-align: left;
+}
+.portal-tabs .timeline-content {
+	position: unset;
+	padding-top: 50px;
+}
+.portal-tabs .timeline-content ul {
+	padding-left: 10px;
+}
+.portal-tabs .timeline-content ul li {
+	padding-bottom: 100px;
+	border-left: 4px solid #000;
+}
+.portal-tabs .timeline-content ul li:last-child {
+	border-left: 4px solid transparent;
+}
+.portal-tabs .timeline-content ul li::before {
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 0;
+}
+.portal-tabs .timeline-content h2,
+.portal-tabs .timeline-content div,
+.portal-tabs .timeline-content p {
+	color: #000;
+}
+.portal-tabs .timeline-content h2 {
+	font-weight: 500;
+}
+.judge-user-account {
+	padding-top: 50px;
+}
+.judge-user-account label {
+	font-size: 12px;
+	color: #000;
+	text-transform: uppercase;
+}
+.judge-user-account input {
+	font-size: 20px;
+	color: #000;
+	letter-spacing: 1px;
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 0;
+}
+.judge-user-account input:active,
+.judge-user-account input:focus {
+	background-color: transparent;
+	box-shadow: none;
+	outline: 0;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.reset-password-box label {
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.reset-password-box input {
+	border: 1px solid #000;
+	border-radius: 0;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.reset-password-box input:active,
+.reset-password-box input:focus {
+	outline: 0;
+	border: 1px solid #000;
+	box-shadow: none;
+	color: #000;
+}
+.change-password {
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.document-title h2{
+	font-size: 14px;
+	color: #000;
+}
+.document-area{
+	border: 1px solid #000;
+	margin: 20px 0;
+	padding: 20px;
+}
+.document-area p{
+	font-size: 14px;
+	color: #000;
+	padding: 10px 0;
+}
+
+/*---------------------------------------
+   User Portal Page CSS
+-----------------------------------------*/
+
+.user-register,
+.user-portal-login {
+	padding: 100px 0;
+}
+.user-register h2,
+.user-portal-login h2 {
+	padding-bottom: 50px;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+.user-register-form,
+.user-login-form {
+	margin: 0 auto;
+	max-width: 500px;
+}
+.user-register-form label,
+.user-login-form label {
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.user-register-form .form-check-label,
+.user-login-form .form-check-label {
+	text-transform: unset;
+}
+.user-register-form .form-control,
+.user-login-form .form-control {
+	height: 50px;
+	padding: 10px;
+	border: 0;
+	border-radius: 0;
+	color: #000;
+	font-size: 13px;
+}
+.user-register-form .form-control::placeholder,
+.user-login-form .form-control::placeholder {
+	color: #d4d4d4;
+	font-size: 13px;
+}
+.user-register-form .form-check-input,
+.user-login-form .form-check-input {
+	margin-top: 0;
+	width: 15px;
+	height: 15px;
+}
+.user-register-form .submit-btn {
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 13px 60px;
+	background-color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-top: 50px;
+}
+.user-register-note p,
+.user-register-note a {
+	font-size: 13px;
+	color: #fff;
+	line-height: 14px;
+}
+.user-register-note a{
+	text-decoration: underline !important;
+}
+.sign-in-btn{
+	font-size: 13px;
+	color: #fff;
+	display: block;
+	text-align: right;
+	text-decoration: underline !important;
+	padding-top: 5px;
+}
+.sign-in-btn:hover{
+	color: #fff;
+}
+.user-login-form .forgot-password {
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	text-decoration: underline !important;
+	display: block;
+	text-align: right;
+}
+.user-login-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.user-login-buttons a,
+.user-login-form .submit-btn {
+	display: block;
+	margin-top: 30px;
+	width: 170px;
+	padding: 15px 0 11px;
+	background-color: #fff;
+	color: #000;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.user-login-form .submit-btn {
+	margin-left: auto;
+}
+
+.user-account {
+	padding-top: 50px;
+}
+.user-account label {
+	font-size: 12px;
+	color: #000;
+	text-transform: uppercase;
+}
+.user-account input {
+	font-size: 20px;
+	color: #000;
+	letter-spacing: 1px;
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 0;
+}
+.user-account input:active,
+.user-account input:focus {
+	background-color: transparent;
+	box-shadow: none;
+	outline: 0;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.user-faq-content {
+	padding-top: 50px;
+}
+.faq-box{
+	padding-bottom: 50px;
+}
+.faq-box .faq-question h2 {
+	padding-bottom: 10px;
+	color: #000;
+	font-size: 23px;
+	font-weight: 500;
+	line-height: 27px;
+	letter-spacing: 1px;
+}
+.faq-box .faq-answer p {
+	font-size: 23px;
+	color: #000;
+	line-height: 27px;
+}
+.document-submission {
+	padding-top: 50px;
+}
+.document-status h2 {
+	color: #000;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 38px;
+	text-transform: uppercase;
+}
+.document-status a {
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#submissionModal .modal-dialog {
+	max-width: 600px;
+}
+#submissionModal .modal-content {
+	background-color: #000;
+	padding: 50px 30px;
+}
+#submissionModal .modal-body {
+	padding: 0;
+}
+.submission-modal-content h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.submission-modal-content .form-check {
+	padding-top: 15px;
+}
+.submission-modal-content label {
+	color: #fff;
+	font-size: 20px;
+}
+.submission-modal-content label a {
+	color: #fff;
+	text-decoration: underline !important;
+}
+.submission-modal-content .form-check-input {
+	width: 15px;
+	height: 15px;
+}
+.submission-modal-content .agreement-btns button,
+.submission-modal-content .agreement-btns a {
+	min-width: 170px;
+	background-color: #fff;
+	color: #000;
+}
+
+
+#logoutModal .modal-dialog {
+	max-width: 600px;
+}
+#logoutModal .modal-content {
+	background-color: #000;
+	padding: 50px 30px;
+}
+#logoutModal .modal-body {
+	padding: 0;
+}
+.logout-modal-content h2 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.logout-modal-content .agreement-btns button,
+.logout-modal-content .agreement-btns a {
+	background-color: #fff;
+	color: #000;
+	min-width: 170px;
+}
+
+.submission-form {
+	padding-top: 50px;
+}
+.submission-form-title h2 {
+	color: #000;
+	font-size: 32px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.steps-progress{
+	padding-bottom: 50px;
+}
+.steps-progress h3{
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.step-progress-box ul {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 5px;
+	list-style: none;
+}
+.step-progress-box ul li {
+	display: inline-block;
+	margin-top: 10px;
+	width: 100%;
+	height: 10px;
+	border: 1px solid #000;
+}
+.step-progress-box ul li.active {
+	background-color: #000;
+}
+.step-progress-box ul li a {
+	display: block;
+	height: 100%;
+}
+.submission-step {
+	padding-top: 50px;
+}
+.submission-step h2 {
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.submission-step h2 span {
+	font-weight: 500;
+}
+
+.step-form {
+	padding-top: 30px;
+}
+.step-form label {
+	color: #000;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.step-form .form-control {
+	font-size: 14px;
+	color: #000;
+	letter-spacing: 1px;
+	border: 1px solid #000;
+	border-radius: 0;
+	height: 50px;
+	padding: 0 10px;
+}
+.step-form textarea {
+	height: auto !important;
+	padding: 10px !important;
+}
+.step-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 100px;
+}
+
+.additional-product-information {
+	padding-top: 30px;
+}
+.information-box {
+	padding-top: 50px;
+}
+.information-box h3 {
+	font-size: 20px;
+	color: #000;
+	padding: 10px 0;
+}
+.information-box .form-check-label {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	text-transform: inherit;
+}
+.information-box .form-check-input {
+	width: 15px;
+	height: 15px;
+}
+.conditional-notes {
+	padding-top: 30px;
+}
+.conditional-notes1 {
+	padding-top: 30px;
+}
+#add-team-member {
+	font-size: 13px;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: underline;
+	background-color: transparent;
+	padding-top: 20px;
+}
+.team-members-wrap .team-member:not(:first-child) {
+	padding-top: 30px;
+}
+.document-requirements {
+	padding-top: 50px;
+}
+.document-requirements.judging-aspects {
+	padding-top: 0;
+}
+.document-requirements h3 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+}
+.document-requirements p {
+	font-size: 20px;
+	color: #000;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+.document-requirements a {
+	color: #000;
+	font-size: 20px;
+	text-decoration: underline !important;
+}
+.document-agreement {
+	padding-top: 50px;
+}
+.document-agreement .form-check-input {
+	width: 15px;
+	height: 15px;
+}
+.document-agreement label {
+	color: #000;
+	font-size: 20px;
+}
+.upload-file-requirements h3 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.upload-file-requirements ul {
+	list-style: none;
+	padding-top: 10px;
+}
+.upload-file-requirements ul li {
+	padding-bottom: 20px;
+	color: #000;
+	font-size: 20px;
+	line-height: 32px;
+}
+.upload-file-requirements ul li a {
+	font-size: 20px;
+	line-height: 32px;
+	color: #000;
+	text-decoration: underline !important;
+}
+.document-file-form{
+	padding-top: 20px;
+}
+.upload-file-button {
+	display: flex;
+	align-items: center;
+}
+.upload-file-button .custom-file-label:after {
+	content: unset !important;
+}
+.upload-file-button .custom-file {
+	border: 3px solid #000;
+	background-color: transparent;
+	width: 130px;
+	height: 50px;
+}
+.upload-file-button .custom-file input {
+	border: 0;
+}
+.upload-file-button .custom-file label {
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0;
+	padding: 0;
+	line-height: 47px;
+}
+.upload-file-button p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #000;
+	display: inline-block;
+	padding-left: 10px;
+}
+.upload-file-drag {
+	margin-top: 30px;
+}
+.upload-file-drag .custom-file-label:after {
+	content: unset !important;
+}
+.upload-file-drag .custom-file {
+	border: 3px dashed #8c8c8c;
+	background-color: transparent;
+	height: 200px;
+	cursor: pointer;
+}
+.upload-file-drag .custom-file label {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	border: 0;
+	box-shadow: none !important;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.upload-file-drag .custom-file input {
+	height: 100%;
+}
+.external-video-link {
+	padding-top: 20px;
+}
+.external-video-link label {
+	font-size: 20px;
+	line-height: 32px;
+	color: #000;
+}
+.external-video-link .form-control {
+	font-size: 14px;
+	color: #000;
+	letter-spacing: 1px;
+	border: 1px solid #000;
+	border-radius: 0;
+	height: 50px;
+	padding: 0 10px;
+}
+
+.payment-info h3 {
+	padding-bottom: 20px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.payment-info p {
+	font-size: 20px;
+	line-height: 25px;
+	color: #000;
+}
+.billing-form h2,
+.payment-form h2 {
+	margin-bottom: 30px;
+}
+.form-agreement p {
+	color: #000;
+	font-size: 20px;
+	line-height: 25px;
+}
+.form-agreement p strong{
+	font-weight: 500;
+}
+.form-agreement .form-check {
+	padding-top: 50px;
+}
+.form-agreement input {
+	width: 15px;
+	height: 15px;
+}
+.form-agreement label {
+	font-size: 20px;
+	line-height: 25px;
+	color: #000;
+	text-transform: uppercase;
+}
+.form-agreement label a {
+	color: #000;
+	text-decoration: underline !important;
+}
+.submission-step {
+	display: none;
+}
+.submission-step.active {
+	display: block;
+}
+#successfullySubmissionModal .modal-content,
+#failedSubmissionModal .modal-content {
+	padding: 50px 30px;
+	background-color: #000;
+}
+#successfullySubmissionModal .modal-body,
+#failedSubmissionModal .modal-body {
+	padding: 0;
+}
+.successfully-submission-content h2 {
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.successfully-submission-content p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	padding: 15px 0;
+}
+.successfully-submission-content button {
+	display: block;
+	margin: 0 auto;
+}
+.reset-password {
+	padding: 100px 0;
+}
+.reset-password-form,
+.reset-password-confirmation-form,
+.update-password-form,
+.again-reset-password-form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.reset-password-form p {
+	font-size: 23px;
+	color: #fff;
+	padding-top: 10px;
+}
+.reset-password-form .form-group {
+	padding-top: 30px;
+}
+.reset-password-form label,
+.reset-password-confirmation-form label,
+.update-password-form label,
+.again-reset-password-form label{
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.reset-password-form .form-control,
+.again-reset-password-form .form-control,
+.update-password-form .form-control,
+.reset-password-confirmation-form .form-control{
+	font-size: 15px;
+	color: #000;
+	border: 0;
+	border-radius: 0;
+	padding: 10px;
+	height: 50px;
+}
+.reset-password-form h2,
+.reset-password-confirmation-form h2,
+.again-reset-password-form h2,
+.update-password-form h2 {
+	font-size: 32px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+}
+.reset-password-submit,
+.reset-password-confirmation-submit,
+.update-password {
+	display: block;
+	margin-top: 24px;
+	margin-left: auto;
+	min-width: 150px;
+	background-color: #fff;
+	color: #000;
+}
+.reset-password-confirmation-submit,
+.update-password {
+	padding: 2px 0 0;
+}
+.reset-password-confirmation-form .form-control:disabled,
+.reset-password-form .form-control:disabled,
+.update-password-form .form-control:disabled,
+.again-reset-password-form .form-control:disabled {
+	background-color: #a7a7a7;
+}
+.not-get-email a {
+	display: inline-block;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: underline !important;
+}
+.reset-password-confirmation-note p {
+	font-size: 23px;
+	color: #fff;
+	padding-top: 20px;
+}
+.contact-to-reset a {
+	font-size: 13px;
+	color: #fff;
+	text-decoration: underline !important;
+	display: inline-block;
+	margin-top: 5px;
+}
+.timer-to-reset {
+	padding-top: 20px;
+}
+.timer-to-reset p {
+	font-size: 23px;
+	color: #fff;
+}
+
+/* css by suraj */
+.btn-prev img,
+.btn-next img {
+	vertical-align: middle;
+}
+.btn-next img {
+	margin-left: 20px;
+}
+.btn-prev img {
+	margin-right: 20px;
+}
+.btn-prev,
+.btn-next {
+	padding: 0;
+	border: unset;
+	text-align: center;
+	font-size: 23px;
+	line-height: 27px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+.btn-prev{
+	position: relative;
+	left: -58px;
+}
+.btn-next {
+	float: right;
+	position: relative;
+	right: -60px;
+}
+div[id^='judgesModal'] .judge-profile .row:first-of-type {
+	margin-bottom: 20px;
+}
+div[id^='judgesModal'] .close {
+	opacity: 1;
+}
+.footer-menu ul li:hover a {
+	color: #ffffff !important;
+}
+.investment-alliance-form .form-group input.form-control,
+.timeline-form .form-group input.form-control {
+	cursor: pointer;
+}
+.see-mobile-link{
+	display: none;
+}
+.page-template-investment-alliance .investment-alliance,
+.page-template-prize-development-council .prize-development-council,
+.page-template-our-judges .our-judges{
+	padding-top: 80px;
+}
+/* SEMI FINALIST TEAMS */
+.semi-finalist-teams {
+	padding: 250px 48px 50px 48px;
+}
+.semi-finalist-teams-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px 80px;
+	text-align: center;
+}
+.semi-finalist-teams-grid h2 {
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+
+.slider-tab,
+.slider-mobile {
+	display: none;
+}
+.slider-tab img {
+	width: 100%;
+}
+.hero-section div[class^='slider'],
+.hero-section div[class^='slider'] img {
+	width: 100%;
+}
+
+.singlepage .section-title h2 { 
+	padding-bottom:50px;
+}
+.singlepage .ceo-judge{
+	padding-top: 30px;
+}
+.singlepage .ceo-image img {
+	margin: unset;
+}
+.singlepage {
+	padding: 250px 48px 120px 48px;
+}
+.singlepage .investment-alliance-form {
+	padding-top: 70px;
+}
+.field-show {
+	float: right;
+	margin-left: -25px;
+	margin-top: -34px;
+	margin-right: 10px;
+	color:#000;
+	position: relative;
+	z-index: 2;
+	text-transform: uppercase;
+}
+
+.semi-finalist-teams {
+	display: none;
+}
+
+/* topbar css */
+.top-bar {
+	padding: 10px 48px 0px 48px;
+	background: #000;
+}
+.top-bar a {
+	font-size: 12px;
+	line-height: 14px;
+	color: #A7A7A7 !important;
+	cursor: pointer;
+}
+.top-bar .dropdown-toggle::after {
+	vertical-align: middle;
+}
+.top-bar .dropdown-menu {
+	z-index: 9999;
+	width: 200px !important;
+	background: #ffffff;
+	align-items: normal;
+	padding-bottom: 10px;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	border-radius: unset;
+	border: unset;
+	padding-top: 0;
+}
+.top-bar .dropdown-menu a {
+	color: #8C8C8C !important;
+	font-size: 15px;
+	padding: 13px 13px 8px !important;
+	text-align: left;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E4E4E4;
+}
+.top-bar .dropdown-item.active,
+.top-bar .dropdown-item:active {
+	background-color: transparent;
+}
+
+.page-template-user-login .top-bar {
+	display: none !important;
+}
+
+.newsletter .modal-body ._content {
+	padding: 14px;
+}
+.newsletter .modal-dialog-centered {
+	max-width: 345px;
+	margin: auto;
+}
+.newsletter .close {
+	opacity: 1;
+	margin-top: -5px;
+}
+.error {
+	color: red !important
+}
+.disabled-button {
+	background-color: #d3d3d3 !important;
+}
+.text-count {
+	float: right;
+	font-weight: bold;
+	color: #970000;
+	padding-right: 15px;
+}
+
+.upload-file-zone ul{
+	list-style: none;
+}
+.upload-file-zone ul li{
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+.upload-file-zone .file-icon{
+	font-size: 40px;
+	color: #000;
+}
+.upload-file-zone .file-upload-preview{
+	padding-left: 20px;
+	width: 100%;
+}
+.upload-file-zone .file-upload-preview .file-data {
+	float: left;
+}
+.upload-file-zone .file-upload-preview .file-data h6 {
+	font-size: 15px;
+	color: #000;
+}
+.upload-file-zone .file-upload-preview .file-data p {
+	font-size: 10px;
+	color: #000;
+}
+.upload-file-zone .file-upload-preview .file-upload-actions {
+	text-align: right;
+}
+.upload-file-zone .file-upload-preview .file-upload-actions button {
+	margin-right: 15px;
+	border: 0;
+	background: transparent;
+	color: #000;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.upload-file-zone .file-upload-preview .file-upload-actions button:last-child {
+	margin-right: 0;
+}
+.upload-file-zone .file-upload-progress {
+	padding-top: 10px;
+}
+.file-upload-progress .upload-progress-bar {
+	width: 100%;
+	height: 5px;
+	border: 1px solid #000;
+}
+.file-upload-progress .upload-progress {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+/* people modal css */
+.modal_loader_img {
+	display: block;
+	margin: auto;
+	width: 100px;
+	padding: 100px 0;
+	text-align: center;
+}
